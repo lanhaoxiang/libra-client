@@ -12,6 +12,17 @@
     "prepublish": "npm run build",
     "browserify": "browserify --full-paths dist/index.js --standalone Libra -o build/libra-client.js -d"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanhaoxiang/libra-client.git"
+  },
+  "keywords": [
+    "libra",
+    "node",
+    "javascript",
+    "client",
+    "library"
+  ],
   "author": "David Lan <lanhaoxiang@qq.com> (https://github.com/lanhaoxiang)",
   "contributors": [
     "David Lan <lanhaoxiang@qq.com> (https://github.com/lanhaoxiang/)"
