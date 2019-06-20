@@ -4,15 +4,23 @@
   "description": "A javascript client to interact with libra blockchain",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf ./dist/* & rm -rf ./build/* & rm -rf ./es/*",
+    "prebuild": "npm run clean && rm -rf ./build/*",
+    "build": "BABEL_ENV=cjs babel lib -d dist",
+    "build-es": "BABEL_ENV=es babel lib -d es",
+    "postbuild": "npm run browserify && npm run build-es",
+    "prepublish": "npm run build",
+    "browserify": "browserify --full-paths dist/index.js --standalone Libra -o build/libra-client.js -d"
   },
   "author": "David Lan<lanhaoxiang@qq.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.4",
     "@babel/plugin-transform-runtime": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
-    "@babel/runtime": "^7.4.4"
+    "@babel/runtime": "^7.4.4",
+    "browserify": "^16.2.3"
   },
   "dependencies": {}
 }
