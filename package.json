@@ -2,7 +2,7 @@
   "name": "libra-client",
   "version": "0.0.1",
   "description": "A javascript client to interact with libra blockchain",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "clean": "rm -rf ./dist/* & rm -rf ./build/* & rm -rf ./es/*",
     "prebuild": "npm run clean && rm -rf ./build/*",
