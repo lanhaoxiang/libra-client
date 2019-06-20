@@ -12,8 +12,18 @@
     "prepublish": "npm run build",
     "browserify": "browserify --full-paths dist/index.js --standalone Libra -o build/libra-client.js -d"
   },
-  "author": "David Lan<lanhaoxiang@qq.com>",
+  "author": "David Lan <lanhaoxiang@qq.com> (https://github.com/lanhaoxiang)",
+  "contributors": [
+    "David Lan <lanhaoxiang@qq.com> (https://github.com/lanhaoxiang/)"
+  ],
+  "engines": {
+    "node": ">= 6.0.0"
+  },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lanhaoxiang/libra-client/issues"
+  },
+  "homepage": "https://github.com/lanhaoxiang/libra-client#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.4",
