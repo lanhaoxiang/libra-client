@@ -22,6 +22,6 @@ let client = Libra.instance({
 
 > All apis are on the way
 
--[] Account
--[] Query
--[] Transfer
+- [ ] Account
+- [ ] Query
+- [ ] Transfer
